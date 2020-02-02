@@ -1,7 +1,6 @@
 'use strict';
 
 let money,
-//expenses = [],
 
 isNumber = function(n){
         return !isNaN(parseFloat(n)) && isFinite(n)
@@ -82,13 +81,8 @@ let askingExpensesDeposit = appData.asking(),
     accumulatedMonths = appData.getBudget(),
     targetMonth = appData.getTargetMonth();
 
-//console.log(typeof String(money));
-//console.log(typeof appData.income);
-//console.log(typeof appData.deposit);
-//console.log(appData.addExpenses);
-//console.log(appData.expenses);
+
 console.log ('Расходы за месяц ' + expensesAmount);
-//console.log(appData.expensesMonth);
 
 if (Math.round(targetMonth) > 0){
     console.log('Цель будет достигнута за ' + Math.round(targetMonth) + ' месяцев');
@@ -97,10 +91,6 @@ else{
     console.log('Цель не будет достигнута');
 }
 
-/*console.log('Период равен', appData.period, 'месяцев');
-console.log('Цель заработать', appData.mission, 'рублей');
-console.log('Бюджет на месяц ' + appData.budgetMonth);
-console.log('Бюджет на день: ' + appData.budgetDay);*/
 console.log(appData.getStatusIncome());
 console.log('Наша программа включает в себя данные:');
 for (let key in appData){
