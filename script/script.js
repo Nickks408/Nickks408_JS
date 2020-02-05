@@ -145,3 +145,31 @@ for (let key in appData){
 
 appData.getInfoDeposit();
 console.log(appData.percentDeposit, appData.moneyDeposit, appData.calcSavedMoney());
+
+
+
+let buttonStart = document.getElementById('start');
+console.log(buttonStart);
+
+let buttonIncomeAdd = document.getElementsByTagName('button');
+console.log(buttonIncomeAdd[0]);
+
+let buttonExpensesAdd = document.getElementsByTagName('button');
+console.log(buttonExpensesAdd[1]);
+
+let depositCheck = document.querySelector('#deposit-check');
+console.log(depositCheck);
+
+let additionalncomeItem = document.querySelectorAll('.additional_income-item');
+console.log(additionalncomeItem);
+
+let result = document.querySelectorAll('.result > div > input');
+console.log(result);
+
+let data = document.querySelectorAll('.data > div > input');
+console.log(data);
+
+
+
+
+
